@@ -26,6 +26,18 @@
    "listingapis": "aftermath"
   }
  },
+ "aivoraexchange": {
+  "label": "Aivora Exchange",
+  "rest": "https://aivora.com/",
+  "kind": "host",
+  "tags": [
+   "cex"
+  ],
+  "website": "https://aivora.com",
+  "aliases": {
+   "logos": "aivoraexchange"
+  }
+ },
  "alpaca": {
   "label": "Alpaca",
   "rest": "https://alpaca.markets/",
@@ -131,6 +143,21 @@
   "aliases": {
    "ccxt": "bequant",
    "listingapis": "bequant"
+  }
+ },
+ "bibox": {
+  "label": "Bibox",
+  "rest": "https://bibox.com/",
+  "kind": "host",
+  "tags": [
+   "cex"
+  ],
+  "website": "https://bibox.com",
+  "aliases": {
+   "logos": "bibox"
+  },
+  "blocked": {
+   "singapore": 504
   }
  },
  "biconomy": {
@@ -255,6 +282,19 @@
    "listingapis": "bit2me"
   }
  },
+ "bitazza": {
+  "label": "Bitazza",
+  "rest": "https://apexapi.bitazza.com:8443/AP/Ping",
+  "kind": "status",
+  "tags": [
+   "cex"
+  ],
+  "website": "https://bitazza.com",
+  "aliases": {
+   "logos": "bitazza"
+  },
+  "verified": "singapore"
+ },
  "bitbaby": {
   "label": "Bitbaby",
   "rest": "https://www.bitbaby.com/",
@@ -293,6 +333,18 @@
   "aliases": {
    "ccxt": "bitbns",
    "listingapis": "bitbns"
+  }
+ },
+ "bitcastle": {
+  "label": "bitcastle",
+  "rest": "https://bitcastle.io/",
+  "kind": "host",
+  "tags": [
+   "cex"
+  ],
+  "website": "https://bitcastle.io",
+  "aliases": {
+   "logos": "bitcastle"
   }
  },
  "bitcointry": {
@@ -614,6 +666,18 @@
    "listingapis": "bitvavo"
   }
  },
+ "bitvenus": {
+  "label": "BitVenus",
+  "rest": "https://www.bvox.com/",
+  "kind": "host",
+  "tags": [
+   "cex"
+  ],
+  "website": "https://www.bvox.com",
+  "aliases": {
+   "logos": "bitvenus"
+  }
+ },
  "blockchaincom": {
   "label": "Blockchain.com",
   "rest": "https://api.blockchain.com/v3/exchange/tickers/BTC-USD",
@@ -642,6 +706,33 @@
   "aliases": {
    "ccxt": "blofin",
    "listingapis": "blofin"
+  }
+ },
+ "bluefin": {
+  "label": "Bluefin",
+  "rest": "https://api.sui-prod.bluefin.io/v1/exchange/info",
+  "kind": "markets",
+  "tags": [
+   "dex",
+   "perp",
+   "perp-dex"
+  ],
+  "website": "https://bluefin.io",
+  "aliases": {
+   "logos": "bluefin"
+  },
+  "verified": "singapore"
+ },
+ "btcalpha": {
+  "label": "BTC-Alpha (ALP.COM)",
+  "rest": "https://www.alp.com/",
+  "kind": "host",
+  "tags": [
+   "cex"
+  ],
+  "website": "https://www.alp.com",
+  "aliases": {
+   "logos": "btcalpha"
   }
  },
  "btcbox": {
@@ -751,6 +842,18 @@
    "listingapis": "bullish"
   }
  },
+ "bvox": {
+  "label": "BVOX",
+  "rest": "https://bvox.com/",
+  "kind": "host",
+  "tags": [
+   "cex"
+  ],
+  "website": "https://bvox.com",
+  "aliases": {
+   "logos": "bvox"
+  }
+ },
  "bybit": {
   "label": "Bybit",
   "rest": "https://api.bybit.com/v5/market/time",
@@ -838,15 +941,29 @@
  },
  "chainex": {
   "label": "Chainex",
-  "rest": "https://chainex.io/",
-  "kind": "host",
+  "rest": "https://api.chainex.io/market/summary",
+  "kind": "ticker",
   "tags": [
    "cex"
   ],
   "website": "https://chainex.io/",
   "aliases": {
    "listingapis": "chainex"
-  }
+  },
+  "verified": "singapore"
+ },
+ "changellypro": {
+  "label": "Changelly PRO",
+  "rest": "https://api.pro.changelly.com/api/3/public/ticker/BTCUSDT",
+  "kind": "ticker",
+  "tags": [
+   "cex"
+  ],
+  "website": "https://pro.changelly.com",
+  "aliases": {
+   "logos": "changellypro"
+  },
+  "verified": "singapore"
  },
  "coinbase": {
   "label": "Coinbase Advanced",
@@ -902,6 +1019,18 @@
    "listingapis": "coincall"
   }
  },
+ "coincatch": {
+  "label": "CoinCatch",
+  "rest": "https://coincatch.com/",
+  "kind": "host",
+  "tags": [
+   "cex"
+  ],
+  "website": "https://coincatch.com",
+  "aliases": {
+   "logos": "coincatch"
+  }
+ },
  "coincheck": {
   "label": "Coincheck",
   "rest": "https://coincheck.com/api/exchange_status",
@@ -946,15 +1075,16 @@
  },
  "coinjarexchange": {
   "label": "Coinjar Exchange",
-  "rest": "https://www.coinjar.com/",
-  "kind": "host",
+  "rest": "https://data.exchange.coinjar.com/products/BTCAUD/ticker",
+  "kind": "ticker",
   "tags": [
    "cex"
   ],
   "website": "https://www.coinjar.com/",
   "aliases": {
    "listingapis": "coinjarexchange"
-  }
+  },
+  "verified": "singapore"
  },
  "coinmate": {
   "label": "CoinMate",
@@ -1076,15 +1206,16 @@
  },
  "coinzoom": {
   "label": "Coinzoom",
-  "rest": "https://www.coinzoom.com/",
-  "kind": "host",
+  "rest": "https://api.coinzoom.com/api/v1/public/currencies",
+  "kind": "markets",
   "tags": [
    "cex"
   ],
   "website": "https://www.coinzoom.com/",
   "aliases": {
    "listingapis": "coinzoom"
-  }
+  },
+  "verified": "singapore"
  },
  "cryptal": {
   "label": "Cryptal",
@@ -1128,14 +1259,27 @@
  },
  "cube": {
   "label": "Cube",
-  "rest": "https://www.cube.exchange/",
-  "kind": "host",
+  "rest": "https://api.cube.exchange/md/v0/parsed/tickers",
+  "kind": "ticker",
   "tags": [
    "cex"
   ],
   "website": "https://www.cube.exchange/",
   "aliases": {
    "listingapis": "cube"
+  },
+  "verified": "singapore"
+ },
+ "cypher": {
+  "label": "Cypher",
+  "rest": "https://cyphereth.com/",
+  "kind": "host",
+  "tags": [
+   "cex"
+  ],
+  "website": "https://cyphereth.com",
+  "aliases": {
+   "logos": "cypher"
   }
  },
  "deepcoin": {
@@ -1197,6 +1341,19 @@
    "ccxt": "derive",
    "listingapis": "derive"
   }
+ },
+ "dexalot": {
+  "label": "Dexalot",
+  "rest": "https://api.dexalot.com/privapi/trading/pairs",
+  "kind": "markets",
+  "tags": [
+   "dex"
+  ],
+  "website": "https://dexalot.com",
+  "aliases": {
+   "logos": "dexalot"
+  },
+  "verified": "singapore"
  },
  "dextrade": {
   "label": "Dex-Trade",
@@ -1274,6 +1431,18 @@
   "website": "https://earnbit.com/",
   "aliases": {
    "listingapis": "earnbit"
+  }
+ },
+ "emirex": {
+  "label": "Emirex",
+  "rest": "https://emirex.com/",
+  "kind": "host",
+  "tags": [
+   "cex"
+  ],
+  "website": "https://emirex.com",
+  "aliases": {
+   "logos": "emirex"
   }
  },
  "exmo": {
@@ -1388,15 +1557,16 @@
  },
  "gateus": {
   "label": "Gate Us",
-  "rest": "https://www.gate.com/",
-  "kind": "host",
+  "rest": "https://api.gate.us/api/v4/spot/currency_pairs/BTC_USD",
+  "kind": "markets",
   "tags": [
    "cex"
   ],
   "website": "https://www.gate.com/en-us",
   "aliases": {
    "listingapis": "gateus"
-  }
+  },
+  "verified": "singapore"
  },
  "gemini": {
   "label": "Gemini",
@@ -1411,6 +1581,32 @@
    "ccxt": "gemini",
    "listingapis": "gemini"
   }
+ },
+ "giottus": {
+  "label": "giottus",
+  "rest": "https://giottus.com/",
+  "kind": "host",
+  "tags": [
+   "cex"
+  ],
+  "website": "https://giottus.com",
+  "aliases": {
+   "logos": "giottus"
+  }
+ },
+ "globe": {
+  "label": "Globe",
+  "rest": "https://globe.exchange/api/v1/ticker/contracts",
+  "kind": "ticker",
+  "tags": [
+   "cex",
+   "perp"
+  ],
+  "website": "https://globe.exchange",
+  "aliases": {
+   "logos": "globe"
+  },
+  "verified": "singapore"
  },
  "gmocoinjapan": {
   "label": "Gmo Coin Japan",
@@ -1588,6 +1784,19 @@
    "listingapis": "hyperliquid"
   }
  },
+ "icrypex": {
+  "label": "ICRYPEX",
+  "rest": "https://api.icrypex.com/v1/exchange/info",
+  "kind": "markets",
+  "tags": [
+   "cex"
+  ],
+  "website": "https://icrypex.com",
+  "aliases": {
+   "logos": "icrypex"
+  },
+  "verified": "singapore"
+ },
  "independentreserve": {
   "label": "Independent Reserve",
   "rest": "https://api.independentreserve.com/Public/GetMarketSummary?primaryCurrencyCode=xbt&secondaryCurrencyCode=aud",
@@ -1655,15 +1864,16 @@
  },
  "kanga": {
   "label": "Kanga",
-  "rest": "https://kanga.exchange/",
-  "kind": "host",
+  "rest": "https://public.kanga.exchange/api/market/ticker",
+  "kind": "ticker",
   "tags": [
    "cex"
   ],
   "website": "https://kanga.exchange/",
   "aliases": {
    "listingapis": "kanga"
-  }
+  },
+  "verified": "singapore"
  },
  "kcex": {
   "label": "Kcex",
@@ -1903,6 +2113,19 @@
    "listingapis": "mercadobitcoin"
   }
  },
+ "metalx": {
+  "label": "Metal X",
+  "rest": "https://dex.api.mainnet.metalx.com/dex/v1/markets/all",
+  "kind": "markets",
+  "tags": [
+   "dex"
+  ],
+  "website": "https://metalx.com",
+  "aliases": {
+   "logos": "metalx"
+  },
+  "verified": "singapore"
+ },
  "mexc": {
   "label": "MEXC Global",
   "rest": "https://api.mexc.com/api/v3/time",
@@ -1959,27 +2182,29 @@
  },
  "namiexchange": {
   "label": "Nami Exchange",
-  "rest": "https://nami.exchange/",
-  "kind": "host",
+  "rest": "https://nami.exchange/api/v3/spot/config",
+  "kind": "markets",
   "tags": [
    "cex"
   ],
   "website": "https://nami.exchange/",
   "aliases": {
    "listingapis": "namiexchange"
-  }
+  },
+  "verified": "singapore"
  },
  "nbx": {
   "label": "Nbx",
-  "rest": "https://nbx.com/",
-  "kind": "host",
+  "rest": "https://api.nbx.com/markets",
+  "kind": "markets",
   "tags": [
    "cex"
   ],
   "website": "https://nbx.com/",
   "aliases": {
    "listingapis": "nbx"
-  }
+  },
+  "verified": "singapore"
  },
  "ndax": {
   "label": "NDAX",
@@ -2018,6 +2243,30 @@
   ],
   "aliases": {
    "listingapis": "nonkyc"
+  }
+ },
+ "novadax": {
+  "label": "NovaDAX",
+  "rest": "https://novadax.com/",
+  "kind": "host",
+  "tags": [
+   "cex"
+  ],
+  "website": "https://novadax.com",
+  "aliases": {
+   "logos": "novadax"
+  }
+ },
+ "o2": {
+  "label": "O2",
+  "rest": "https://o2.app/",
+  "kind": "host",
+  "tags": [
+   "cex"
+  ],
+  "website": "https://o2.app",
+  "aliases": {
+   "logos": "o2"
   }
  },
  "okj": {
@@ -2288,15 +2537,16 @@
  },
  "safetrade": {
   "label": "Safetrade",
-  "rest": "https://safetrade.com/",
-  "kind": "host",
+  "rest": "https://safetrade.com/api/v2/trade/public/timestamp",
+  "kind": "time",
   "tags": [
    "cex"
   ],
   "website": "https://safetrade.com",
   "aliases": {
    "listingapis": "safetrade"
-  }
+  },
+  "verified": "singapore"
  },
  "secondbtc": {
   "label": "Secondbtc",
@@ -2309,6 +2559,21 @@
   "aliases": {
    "listingapis": "secondbtc"
   }
+ },
+ "sodex": {
+  "label": "SoDEX",
+  "rest": "https://mainnet-gw.sodex.dev/api/v1/time",
+  "kind": "time",
+  "tags": [
+   "dex",
+   "perp",
+   "perp-dex"
+  ],
+  "website": "https://sodex.com",
+  "aliases": {
+   "logos": "sodex"
+  },
+  "verified": "singapore"
  },
  "superex": {
   "label": "Superex",
@@ -2334,6 +2599,18 @@
   ],
   "aliases": {
    "listingapis": "tapbit"
+  }
+ },
+ "templedigitalgroup": {
+  "label": "Temple Digital Group",
+  "rest": "https://templedigitalgroup.com/",
+  "kind": "host",
+  "tags": [
+   "cex"
+  ],
+  "website": "https://templedigitalgroup.com",
+  "aliases": {
+   "logos": "templedigitalgroup"
   }
  },
  "tokocrypto": {
@@ -2453,6 +2730,19 @@
    "listingapis": "vindax"
   }
  },
+ "wavesexchange": {
+  "label": "Waves.Exchange",
+  "rest": "https://matcher.waves.exchange/matcher/settings",
+  "kind": "markets",
+  "tags": [
+   "dex"
+  ],
+  "website": "https://waves.exchange",
+  "aliases": {
+   "logos": "wavesexchange"
+  },
+  "verified": "singapore"
+ },
  "wazirx": {
   "label": "Wazirx",
   "rest": "https://api.wazirx.com/sapi/v1/time",
@@ -2559,6 +2849,31 @@
    "ccxt": "xt",
    "listingapis": "xt"
   }
+ },
+ "yellowpro": {
+  "label": "Yellow PRO",
+  "rest": "https://yellow.pro/",
+  "kind": "host",
+  "tags": [
+   "cex"
+  ],
+  "website": "https://yellow.pro",
+  "aliases": {
+   "logos": "yellowpro"
+  }
+ },
+ "yobit": {
+  "label": "YoBit",
+  "rest": "https://yobit.net/api/3/ticker/btc_usdt",
+  "kind": "ticker",
+  "tags": [
+   "cex"
+  ],
+  "website": "https://yobit.net",
+  "aliases": {
+   "logos": "yobit"
+  },
+  "verified": "singapore"
  },
  "youngplatform": {
   "label": "Young Platform",

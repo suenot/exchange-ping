@@ -21,6 +21,9 @@ PATHS = (
     "/api/v1/timestamp", "/api/v1/public/time", "/api/v2/public/time", "/v1/public/time",
     "/openapi/v1/time", "/openApi/spot/v1/common/time", "/api/v4/public/time", "/public/time",
     "/api/v1/server-time", "/api/v1/serverTime", "/api/time", "/api/servertime", "/api/v3/servertime",
+    "/api/public/server-time", "/api/server-time", "/api/spot/v1/public/time", "/sapi/v1/time",
+    "/api/v2/peatio/public/timestamp", "/api/v2/trade/public/timestamp", "/api/v2/public/timestamp",  # openware
+    "/api/3/info",  # yobit-style info with server_time
 )
 
 

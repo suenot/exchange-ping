@@ -47,12 +47,12 @@ neighbour, above 40 ms another region.
 
 ## Registry
 
-`exchange_ping/venues.json`: 196 venues (centralized exchanges and order-book perp DEXes), each
+`exchange_ping/venues.json`: 220 venues (centralized exchanges and order-book DEXes), each
 with one public endpoint and its `kind`:
 
-- `time` (118): a server-time endpoint, the best probe: tiny and never cached;
-- `status`, `ticker`, `markets`: no time endpoint, a light public one instead;
-- `host` (43): no known public API, only DNS/TCP/TLS (`run --include-untested`).
+- `time` (120): a server-time endpoint, the best probe: tiny and never cached;
+- `status`, `ticker`, `markets` (52): no time endpoint, a light public one instead;
+- `host` (48): no known public API, only DNS/TCP/TLS (`run --include-untested`).
 
 `verified: "singapore"` means the endpoint answered 2xx JSON when the registry was built;
 `blocked: {"singapore": 403}` means it exists but refused that location. Endpoints come from public
