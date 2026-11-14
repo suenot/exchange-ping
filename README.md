@@ -14,18 +14,28 @@ exchange-ping run --venues bybit,okx,binance -n 9 > here.json
 python3 -m exchange_ping run --table            # or straight from a checkout
 ```
 
+From an AWS Singapore (ap-southeast-1) box, 2026-11-14, a few rows:
+
 ```
 venue                     req_min  req_med     tcp     tls http   offset  host
-binance                       5.1      5.6     1.2     4.0  200      0.8  api.binance.com
-bybit                         7.9      8.4     1.9     6.1  200     -1.2  api.bybit.com
-...
+phemex                        6.3      7.1     0.5     3.2  200      0.7  api.phemex.com
+bitfinex                      9.8     14.2     1.8     5.7  200        -  api-pub.bitfinex.com
+bitflyer                     10.6     10.8     1.3     5.1  200        -  api.bitflyer.com
+upbit                        70.4     73.3    65.4    68.4  200  -1369.2  api.upbit.com
+binance                      71.2     71.8     0.9     3.8  200     -0.7  api.binance.com
+bybit                        73.1     75.1     0.5     3.1  200      1.5  api.bybit.com
+gateio                       71.8     79.1    68.4   139.4  200     -0.3  api.gateio.ws
+okx                          84.7     86.2     1.7     6.8  200      3.0  www.okx.com
+kraken                      172.2    184.6     2.1     9.3  200   -755.6  api.kraken.com
+coinbase                    250.6    254.4     1.8     7.5  200     -3.0  api.exchange.coinbase.com
+delta                         3.0      3.7     0.8     3.7  200  -4452.4  api.delta.exchange
 ```
 
 ## What the numbers mean
 
 | field | meaning |
 |---|---|
-| `req_min_ms`, `req_ms` | best and median of `n` warm requests on one keep-alive TLS connection, request sent -> first byte. **This is the number that matters.** Server-time endpoints are never cached, so the request has to reach the exchange's API gateway; an order sent from the same box pays about the same round trip before matching. |
+| `req_min_ms`, `req_ms` | best and median of `n` warm requests on one keep-alive TLS connection, request sent -> first byte. **This is the number that matters.** Server-time endpoints are rarely cached, so the request has to reach the exchange's API gateway (a few ms together with an `offset_ms` seconds off, like `delta` above, is a CDN cache hit); an order sent from the same box pays about the same round trip before matching. |
 | `tcp_ms` | TCP connect. Most exchanges sit behind a CDN, so this is often the nearest CDN edge, not the exchange. Do not pick a location by it. |
 | `tls_ms`, `cold_ms`, `dns_ms` | handshake, first request on a fresh connection, name resolution |
 | `offset_ms` | exchange clock minus local clock from the server time in the body, corrected by half the round trip (positive: exchange ahead). Venues that send whole seconds are only good to ±500 ms. |
