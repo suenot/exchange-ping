@@ -1,0 +1,2619 @@
+{
+ "_doc": "Public REST endpoints of crypto exchanges for latency probes. kind: time (server time, best: never cached, tiny), status, ticker (one market), markets (heavier), host (no known public endpoint: only DNS/TCP/TLS are meaningful). verified: the endpoint answered 2xx JSON from the checking node; blocked: it answered this HTTP status there (geo-block or WAF), so it exists but must be checked from elsewhere.",
+ "aevo": {
+  "label": "Aevo",
+  "rest": "https://api.aevo.xyz/time",
+  "kind": "time",
+  "verified": "singapore",
+  "tags": [
+   "perp-dex"
+  ],
+  "aliases": {
+   "listingapis": "aevo"
+  }
+ },
+ "aftermath": {
+  "label": "AftermathFinance",
+  "rest": "https://aftermath.finance/api/ccxt/markets",
+  "kind": "markets",
+  "verified": "singapore",
+  "tags": [
+   "perp-dex"
+  ],
+  "website": "https://aftermath.finance",
+  "aliases": {
+   "ccxt": "aftermath",
+   "listingapis": "aftermath"
+  }
+ },
+ "alpaca": {
+  "label": "Alpaca",
+  "rest": "https://alpaca.markets/",
+  "kind": "host",
+  "tags": [
+   "cex"
+  ],
+  "website": "https://alpaca.markets",
+  "aliases": {
+   "ccxt": "alpaca",
+   "listingapis": "alpaca"
+  }
+ },
+ "apex": {
+  "label": "Apex",
+  "rest": "https://omni.apex.exchange/api/v3/time",
+  "kind": "time",
+  "verified": "singapore",
+  "tags": [
+   "perp-dex"
+  ],
+  "website": "https://omni.apex.exchange",
+  "aliases": {
+   "ccxt": "apex",
+   "listingapis": "apex"
+  }
+ },
+ "arkham": {
+  "label": "Arkham",
+  "rest": "https://arkm.com/",
+  "kind": "host",
+  "tags": [
+   "cex"
+  ],
+  "website": "https://arkm.com",
+  "aliases": {
+   "listingapis": "arkham"
+  }
+ },
+ "ascendex": {
+  "label": "Ascendex",
+  "rest": "https://ascendex.com/api/pro/v1/spot/ticker?symbol=BTC/USDT",
+  "kind": "ticker",
+  "blocked": {
+   "singapore": 403
+  },
+  "tags": [
+   "cex"
+  ],
+  "aliases": {
+   "listingapis": "ascendex"
+  }
+ },
+ "aster": {
+  "label": "Aster",
+  "rest": "https://sapi.asterdex.com/api/v3/time",
+  "kind": "time",
+  "verified": "singapore",
+  "tags": [
+   "perp-dex"
+  ],
+  "website": "https://www.asterdex.com",
+  "aliases": {
+   "ccxt": "aster",
+   "listingapis": "aster"
+  }
+ },
+ "azbit": {
+  "label": "Azbit",
+  "rest": "https://data.azbit.com/api/tickers",
+  "kind": "time",
+  "verified": "singapore",
+  "tags": [
+   "cex"
+  ],
+  "aliases": {
+   "listingapis": "azbit"
+  }
+ },
+ "backpack": {
+  "label": "Backpack",
+  "rest": "https://api.backpack.exchange/api/v1/time",
+  "kind": "time",
+  "verified": "singapore",
+  "tags": [
+   "cex"
+  ],
+  "website": "https://backpack.exchange/",
+  "aliases": {
+   "ccxt": "backpack",
+   "listingapis": "backpack"
+  }
+ },
+ "bequant": {
+  "label": "Bequant",
+  "rest": "https://api.bequant.io/api/3/public/ticker/BTCUSDT",
+  "kind": "time",
+  "verified": "singapore",
+  "tags": [
+   "cex"
+  ],
+  "website": "https://bequant.io",
+  "aliases": {
+   "ccxt": "bequant",
+   "listingapis": "bequant"
+  }
+ },
+ "biconomy": {
+  "label": "Biconomy",
+  "rest": "https://www.biconomy.com/api/v1/tickers",
+  "kind": "time",
+  "verified": "singapore",
+  "tags": [
+   "cex"
+  ],
+  "aliases": {
+   "listingapis": "biconomy"
+  }
+ },
+ "bigone": {
+  "label": "BigONE",
+  "rest": "https://big.one/api/v3/ping",
+  "kind": "time",
+  "verified": "singapore",
+  "tags": [
+   "cex"
+  ],
+  "website": "https://big.one",
+  "aliases": {
+   "ccxt": "bigone",
+   "listingapis": "bigone"
+  }
+ },
+ "binance": {
+  "label": "Binance",
+  "rest": "https://api.binance.com/api/v3/time",
+  "kind": "time",
+  "verified": "singapore",
+  "tags": [
+   "cex"
+  ],
+  "website": "https://www.binance.com",
+  "aliases": {
+   "ccxt": "binance",
+   "listingapis": "binance"
+  }
+ },
+ "binancecoinm": {
+  "label": "Binance COIN-M",
+  "rest": "https://dapi.binance.com/dapi/v1/time",
+  "kind": "time",
+  "verified": "singapore",
+  "tags": [
+   "cex"
+  ],
+  "website": "https://www.binance.com",
+  "aliases": {
+   "ccxt": "binancecoinm"
+  }
+ },
+ "binanceus": {
+  "label": "Binance US",
+  "rest": "https://api.binance.us/api/v3/time",
+  "kind": "time",
+  "verified": "singapore",
+  "tags": [
+   "cex"
+  ],
+  "website": "https://www.binance.us/",
+  "aliases": {
+   "ccxt": "binanceus",
+   "listingapis": "binanceus"
+  }
+ },
+ "binanceusdm": {
+  "label": "Binance USDⓈ-M",
+  "rest": "https://fapi.binance.com/fapi/v1/time",
+  "kind": "time",
+  "verified": "singapore",
+  "tags": [
+   "cex"
+  ],
+  "website": "https://www.binance.com",
+  "aliases": {
+   "ccxt": "binanceusdm"
+  }
+ },
+ "bingx": {
+  "label": "BingX",
+  "rest": "https://open-api.bingx.com/openApi/spot/v1/common/time",
+  "kind": "time",
+  "verified": "singapore",
+  "tags": [
+   "cex"
+  ],
+  "website": "https://bingx.com/",
+  "aliases": {
+   "ccxt": "bingx",
+   "listingapis": "bingx"
+  }
+ },
+ "bit2c": {
+  "label": "Bit2C",
+  "rest": "https://bit2c.co.il/Exchanges/BtcNis/Ticker.json",
+  "kind": "ticker",
+  "verified": "singapore",
+  "tags": [
+   "cex"
+  ],
+  "website": "https://www.bit2c.co.il",
+  "aliases": {
+   "ccxt": "bit2c",
+   "listingapis": "bit2c"
+  }
+ },
+ "bit2me": {
+  "label": "Bit2Me",
+  "rest": "https://gateway.bit2me.com/v1/trading/market-config",
+  "kind": "ticker",
+  "blocked": {
+   "singapore": 418
+  },
+  "tags": [
+   "cex"
+  ],
+  "aliases": {
+   "listingapis": "bit2me"
+  }
+ },
+ "bitbaby": {
+  "label": "Bitbaby",
+  "rest": "https://www.bitbaby.com/",
+  "kind": "host",
+  "tags": [
+   "cex"
+  ],
+  "website": "https://www.bitbaby.com",
+  "aliases": {
+   "listingapis": "bitbaby"
+  }
+ },
+ "bitbank": {
+  "label": "bitbank",
+  "rest": "https://public.bitbank.cc/btc_jpy/ticker",
+  "kind": "time",
+  "verified": "singapore",
+  "tags": [
+   "cex"
+  ],
+  "website": "https://bitbank.cc/",
+  "aliases": {
+   "ccxt": "bitbank",
+   "listingapis": "bitbank"
+  }
+ },
+ "bitbns": {
+  "label": "Bitbns",
+  "rest": "https://bitbns.com/order/fetchMarkets",
+  "kind": "markets",
+  "verified": "singapore",
+  "tags": [
+   "cex"
+  ],
+  "website": "https://bitbns.com",
+  "aliases": {
+   "ccxt": "bitbns",
+   "listingapis": "bitbns"
+  }
+ },
+ "bitcointry": {
+  "label": "Bitcointry",
+  "rest": "https://bitcointry.com/",
+  "kind": "host",
+  "tags": [
+   "cex"
+  ],
+  "website": "https://bitcointry.com",
+  "aliases": {
+   "listingapis": "bitcointry"
+  }
+ },
+ "bitdelta": {
+  "label": "Bitdelta",
+  "rest": "https://bitdelta.com/",
+  "kind": "host",
+  "tags": [
+   "cex"
+  ],
+  "website": "https://bitdelta.com/",
+  "aliases": {
+   "listingapis": "bitdelta"
+  }
+ },
+ "bitexen": {
+  "label": "Bitexen",
+  "rest": "https://www.bitexen.com/api/v1/ticker/",
+  "kind": "time",
+  "verified": "singapore",
+  "tags": [
+   "cex"
+  ],
+  "aliases": {
+   "listingapis": "bitexen"
+  }
+ },
+ "bitexlive": {
+  "label": "Bitexlive",
+  "rest": "https://bitexlive.com/",
+  "kind": "host",
+  "tags": [
+   "cex"
+  ],
+  "website": "https://bitexlive.com/",
+  "aliases": {
+   "listingapis": "bitexlive"
+  }
+ },
+ "bitfinex": {
+  "label": "Bitfinex",
+  "rest": "https://api-pub.bitfinex.com/v2/platform/status",
+  "kind": "ticker",
+  "verified": "singapore",
+  "tags": [
+   "cex"
+  ],
+  "website": "https://www.bitfinex.com",
+  "aliases": {
+   "ccxt": "bitfinex",
+   "listingapis": "bitfinex"
+  }
+ },
+ "bitflyer": {
+  "label": "bitFlyer",
+  "rest": "https://api.bitflyer.com/v1/gethealth",
+  "kind": "ticker",
+  "verified": "singapore",
+  "tags": [
+   "cex"
+  ],
+  "website": "https://bitflyer.com",
+  "aliases": {
+   "ccxt": "bitflyer",
+   "listingapis": "bitflyer"
+  }
+ },
+ "bitget": {
+  "label": "Bitget",
+  "rest": "https://api.bitget.com/api/v2/public/time",
+  "kind": "time",
+  "verified": "singapore",
+  "tags": [
+   "cex"
+  ],
+  "website": "https://www.bitget.com",
+  "aliases": {
+   "ccxt": "bitget",
+   "listingapis": "bitget"
+  }
+ },
+ "bithumb": {
+  "label": "Bithumb",
+  "rest": "https://api.bithumb.com/public/ticker/BTC_KRW",
+  "kind": "time",
+  "verified": "singapore",
+  "tags": [
+   "cex"
+  ],
+  "website": "https://www.bithumb.com",
+  "aliases": {
+   "ccxt": "bithumb",
+   "listingapis": "bithumb"
+  }
+ },
+ "bitkan": {
+  "label": "Bitkan",
+  "rest": "https://www.bitkan.com/",
+  "kind": "host",
+  "tags": [
+   "cex"
+  ],
+  "website": "https://www.bitkan.com",
+  "aliases": {
+   "listingapis": "bitkan"
+  }
+ },
+ "bitkub": {
+  "label": "Bitkub",
+  "rest": "https://api.bitkub.com/api/v3/servertime",
+  "kind": "time",
+  "verified": "singapore",
+  "tags": [
+   "cex"
+  ],
+  "aliases": {
+   "listingapis": "bitkub"
+  }
+ },
+ "bitlo": {
+  "label": "Bitlo",
+  "rest": "https://www.bitlo.com/",
+  "kind": "host",
+  "tags": [
+   "cex"
+  ],
+  "website": "https://www.bitlo.com/",
+  "aliases": {
+   "listingapis": "bitlo"
+  }
+ },
+ "bitmart": {
+  "label": "BitMart",
+  "rest": "https://www.bitmart.com/",
+  "kind": "host",
+  "tags": [
+   "cex"
+  ],
+  "website": "https://www.bitmart.com/",
+  "aliases": {
+   "ccxt": "bitmart",
+   "listingapis": "bitmart"
+  }
+ },
+ "bitmex": {
+  "label": "BitMEX",
+  "rest": "https://www.bitmex.com/api/v1/instrument?symbol=XBTUSD&count=1",
+  "kind": "ticker",
+  "blocked": {
+   "singapore": 403
+  },
+  "tags": [
+   "cex"
+  ],
+  "website": "https://www.bitmex.com",
+  "aliases": {
+   "ccxt": "bitmex",
+   "listingapis": "bitmex"
+  }
+ },
+ "bitopro": {
+  "label": "BitoPro",
+  "rest": "https://api.bitopro.com/v3/tickers/btc_twd",
+  "kind": "ticker",
+  "verified": "singapore",
+  "tags": [
+   "cex"
+  ],
+  "website": "https://www.bitopro.com",
+  "aliases": {
+   "ccxt": "bitopro",
+   "listingapis": "bitopro"
+  }
+ },
+ "bitpanda": {
+  "label": "One Trading",
+  "rest": "https://api.onetrading.com/fast/v1/time",
+  "kind": "time",
+  "verified": "singapore",
+  "tags": [
+   "cex"
+  ],
+  "website": "https://onetrading.com/",
+  "aliases": {
+   "ccxt": "onetrading",
+   "listingapis": "bitpanda"
+  }
+ },
+ "bitrue": {
+  "label": "Bitrue",
+  "rest": "https://www.bitrue.com/api/v1/time",
+  "kind": "time",
+  "verified": "singapore",
+  "tags": [
+   "cex"
+  ],
+  "website": "https://www.bitrue.com",
+  "aliases": {
+   "ccxt": "bitrue",
+   "listingapis": "bitrue"
+  }
+ },
+ "bitso": {
+  "label": "Bitso",
+  "rest": "https://bitso.com/api/v3/ticker/?book=btc_mxn",
+  "kind": "time",
+  "verified": "singapore",
+  "tags": [
+   "cex"
+  ],
+  "website": "https://bitso.com",
+  "aliases": {
+   "ccxt": "bitso",
+   "listingapis": "bitso"
+  }
+ },
+ "bitstamp": {
+  "label": "Bitstamp",
+  "rest": "https://www.bitstamp.net/api/v2/ticker/btcusd/",
+  "kind": "time",
+  "verified": "singapore",
+  "tags": [
+   "cex"
+  ],
+  "website": "https://www.bitstamp.net",
+  "aliases": {
+   "ccxt": "bitstamp",
+   "listingapis": "bitstamp"
+  }
+ },
+ "bitstorage": {
+  "label": "Bitstorage",
+  "rest": "https://bitstorage.finance/",
+  "kind": "host",
+  "tags": [
+   "cex"
+  ],
+  "website": "https://bitstorage.finance",
+  "aliases": {
+   "listingapis": "bitstorage"
+  }
+ },
+ "bitteam": {
+  "label": "BIT.TEAM",
+  "rest": "https://bit.team/trade/api/ccxt/pairs",
+  "kind": "time",
+  "verified": "singapore",
+  "tags": [
+   "cex"
+  ],
+  "website": "https://bit.team",
+  "aliases": {
+   "ccxt": "bitteam",
+   "listingapis": "bitteam"
+  }
+ },
+ "bittime": {
+  "label": "Bittime",
+  "rest": "https://openapi.bittime.com/api/v1/time",
+  "kind": "time",
+  "verified": "singapore",
+  "discovered": true,
+  "tags": [
+   "cex"
+  ],
+  "website": "https://www.bittime.com/",
+  "aliases": {
+   "listingapis": "bittime"
+  }
+ },
+ "bittrade": {
+  "label": "BitTrade",
+  "rest": "https://api-cloud.bittrade.co.jp/v1/common/timestamp",
+  "kind": "time",
+  "verified": "singapore",
+  "tags": [
+   "cex"
+  ],
+  "website": "https://www.bittrade.co.jp",
+  "aliases": {
+   "ccxt": "bittrade",
+   "listingapis": "bittrade"
+  }
+ },
+ "bitunix": {
+  "label": "Bitunix",
+  "rest": "https://fapi.bitunix.com/api/v1/futures/market/tickers?symbols=BTCUSDT",
+  "kind": "ticker",
+  "verified": "singapore",
+  "tags": [
+   "cex"
+  ],
+  "aliases": {
+   "listingapis": "bitunix"
+  }
+ },
+ "bitvavo": {
+  "label": "Bitvavo",
+  "rest": "https://api.bitvavo.com/v2/time",
+  "kind": "time",
+  "verified": "singapore",
+  "tags": [
+   "cex"
+  ],
+  "website": "https://bitvavo.com/",
+  "aliases": {
+   "ccxt": "bitvavo",
+   "listingapis": "bitvavo"
+  }
+ },
+ "blockchaincom": {
+  "label": "Blockchain.com",
+  "rest": "https://api.blockchain.com/v3/exchange/tickers/BTC-USD",
+  "kind": "ticker",
+  "verified": "singapore",
+  "tags": [
+   "cex"
+  ],
+  "website": "https://blockchain.com",
+  "aliases": {
+   "ccxt": "blockchaincom",
+   "listingapis": "blockchaincom"
+  }
+ },
+ "blofin": {
+  "label": "BloFin",
+  "rest": "https://openapi.blofin.com/api/v1/market/tickers?instId=BTC-USDT",
+  "kind": "ticker",
+  "blocked": {
+   "singapore": 403
+  },
+  "tags": [
+   "cex"
+  ],
+  "website": "https://www.blofin.com",
+  "aliases": {
+   "ccxt": "blofin",
+   "listingapis": "blofin"
+  }
+ },
+ "btcbox": {
+  "label": "BtcBox",
+  "rest": "https://www.btcbox.co.jp/api/v1/ticker",
+  "kind": "ticker",
+  "verified": "singapore",
+  "tags": [
+   "cex"
+  ],
+  "website": "https://www.btcbox.co.jp",
+  "aliases": {
+   "ccxt": "btcbox",
+   "listingapis": "btcbox"
+  }
+ },
+ "btcc": {
+  "label": "Btcc",
+  "rest": "https://www.btcc.com/api/time",
+  "kind": "time",
+  "verified": "singapore",
+  "discovered": true,
+  "tags": [
+   "cex"
+  ],
+  "website": "https://www.btcc.com/",
+  "aliases": {
+   "listingapis": "btcc"
+  }
+ },
+ "btcmarkets": {
+  "label": "BTC Markets",
+  "rest": "https://api.btcmarkets.net/v3/time",
+  "kind": "time",
+  "verified": "singapore",
+  "tags": [
+   "cex"
+  ],
+  "website": "https://btcmarkets.net",
+  "aliases": {
+   "ccxt": "btcmarkets",
+   "listingapis": "btcmarkets"
+  }
+ },
+ "btctradeua": {
+  "label": "Btc Trade Ua",
+  "rest": "https://btc-trade.com.ua/",
+  "kind": "host",
+  "tags": [
+   "cex"
+  ],
+  "website": "https://btc-trade.com.ua/",
+  "aliases": {
+   "listingapis": "btctradeua"
+  }
+ },
+ "btcturk": {
+  "label": "BTCTurk",
+  "rest": "https://api.btcturk.com/api/v2/server/time",
+  "kind": "time",
+  "verified": "singapore",
+  "tags": [
+   "cex"
+  ],
+  "website": "https://www.btcturk.com",
+  "aliases": {
+   "ccxt": "btcturk",
+   "listingapis": "btcturk"
+  }
+ },
+ "btse": {
+  "label": "Btse",
+  "rest": "https://api.btse.com/spot/api/v3.2/time",
+  "kind": "time",
+  "verified": "singapore",
+  "tags": [
+   "cex"
+  ],
+  "aliases": {
+   "listingapis": "btse"
+  }
+ },
+ "buda": {
+  "label": "Buda",
+  "rest": "https://www.buda.com/api/v2/markets",
+  "kind": "ticker",
+  "verified": "singapore",
+  "tags": [
+   "cex"
+  ],
+  "website": "https://www.buda.com",
+  "aliases": {
+   "listingapis": "buda"
+  }
+ },
+ "bullish": {
+  "label": "Bullish",
+  "rest": "https://api.exchange.bullish.com/trading-api/v1/time",
+  "kind": "time",
+  "verified": "singapore",
+  "tags": [
+   "cex"
+  ],
+  "website": "https://bullish.com",
+  "aliases": {
+   "ccxt": "bullish",
+   "listingapis": "bullish"
+  }
+ },
+ "bybit": {
+  "label": "Bybit",
+  "rest": "https://api.bybit.com/v5/market/time",
+  "kind": "time",
+  "verified": "singapore",
+  "tags": [
+   "cex"
+  ],
+  "website": "https://www.bybit.com",
+  "aliases": {
+   "ccxt": "bybit",
+   "listingapis": "bybit"
+  }
+ },
+ "bybiteu": {
+  "label": "Bybit EU",
+  "rest": "https://api.bybit.eu/v5/market/time",
+  "kind": "time",
+  "verified": "singapore",
+  "tags": [
+   "cex"
+  ],
+  "website": "https://www.bybit.eu/",
+  "aliases": {
+   "ccxt": "bybiteu",
+   "listingapis": "bybiteu"
+  }
+ },
+ "bydfi": {
+  "label": "BYDFi",
+  "rest": "https://api.bydfi.com/api/v3/time",
+  "kind": "time",
+  "verified": "singapore",
+  "discovered": true,
+  "tags": [
+   "cex"
+  ],
+  "website": "https://bydfi.com/",
+  "aliases": {
+   "ccxt": "bydfi",
+   "listingapis": "bydfi"
+  }
+ },
+ "byteexchange": {
+  "label": "Byte Exchange",
+  "rest": "https://api.bexc.io/api/v1/time",
+  "kind": "time",
+  "verified": "singapore",
+  "discovered": true,
+  "tags": [
+   "cex"
+  ],
+  "website": "https://bexc.io",
+  "aliases": {
+   "listingapis": "byteexchange"
+  }
+ },
+ "catex": {
+  "label": "Catex",
+  "rest": "https://www.catex.io/",
+  "kind": "host",
+  "tags": [
+   "cex"
+  ],
+  "website": "https://www.catex.io/",
+  "aliases": {
+   "listingapis": "catex"
+  }
+ },
+ "cexio": {
+  "label": "CEX.IO",
+  "rest": "https://trade.cex.io/api/spot/rest-public/get_server_time",
+  "kind": "time",
+  "method": "POST",
+  "body": "{}",
+  "verified": "singapore",
+  "tags": [
+   "cex"
+  ],
+  "website": "https://cex.io",
+  "aliases": {
+   "ccxt": "cex",
+   "listingapis": "cexio"
+  }
+ },
+ "chainex": {
+  "label": "Chainex",
+  "rest": "https://chainex.io/",
+  "kind": "host",
+  "tags": [
+   "cex"
+  ],
+  "website": "https://chainex.io/",
+  "aliases": {
+   "listingapis": "chainex"
+  }
+ },
+ "coinbase": {
+  "label": "Coinbase Advanced",
+  "rest": "https://api.exchange.coinbase.com/time",
+  "kind": "time",
+  "verified": "singapore",
+  "tags": [
+   "cex"
+  ],
+  "website": "https://www.coinbase.com",
+  "aliases": {
+   "ccxt": "coinbase",
+   "listingapis": "coinbase"
+  }
+ },
+ "coinbaseexchange": {
+  "label": "Coinbase Exchange",
+  "rest": "https://api.exchange.coinbase.com/time",
+  "kind": "time",
+  "verified": "singapore",
+  "tags": [
+   "cex"
+  ],
+  "website": "https://coinbase.com/",
+  "aliases": {
+   "ccxt": "coinbaseexchange"
+  }
+ },
+ "coinbaseinternationalexchange": {
+  "label": "Coinbase International",
+  "rest": "https://api.coinbase.com/api/v2/time",
+  "kind": "time",
+  "verified": "singapore",
+  "discovered": true,
+  "tags": [
+   "cex"
+  ],
+  "website": "https://international.coinbase.com/",
+  "aliases": {
+   "ccxt": "coinbaseinternational",
+   "listingapis": "coinbaseinternationalexchange"
+  }
+ },
+ "coincall": {
+  "label": "Coincall",
+  "rest": "https://api.coincall.com/time",
+  "kind": "time",
+  "verified": "singapore",
+  "tags": [
+   "cex"
+  ],
+  "aliases": {
+   "listingapis": "coincall"
+  }
+ },
+ "coincheck": {
+  "label": "Coincheck",
+  "rest": "https://coincheck.com/api/exchange_status",
+  "kind": "time",
+  "verified": "singapore",
+  "tags": [
+   "cex"
+  ],
+  "website": "https://coincheck.com",
+  "aliases": {
+   "ccxt": "coincheck",
+   "listingapis": "coincheck"
+  }
+ },
+ "coindcx": {
+  "label": "Coindcx",
+  "rest": "https://api.coindcx.com/exchange/v1/markets",
+  "kind": "ticker",
+  "verified": "singapore",
+  "tags": [
+   "cex"
+  ],
+  "aliases": {
+   "listingapis": "coindcx"
+  }
+ },
+ "coinex": {
+  "label": "CoinEx",
+  "rest": "https://api.coinex.com/v2/time",
+  "kind": "time",
+  "blocked": {
+   "singapore": 503
+  },
+  "tags": [
+   "cex"
+  ],
+  "website": "https://www.coinex.com",
+  "aliases": {
+   "ccxt": "coinex",
+   "listingapis": "coinex"
+  }
+ },
+ "coinjarexchange": {
+  "label": "Coinjar Exchange",
+  "rest": "https://www.coinjar.com/",
+  "kind": "host",
+  "tags": [
+   "cex"
+  ],
+  "website": "https://www.coinjar.com/",
+  "aliases": {
+   "listingapis": "coinjarexchange"
+  }
+ },
+ "coinmate": {
+  "label": "CoinMate",
+  "rest": "https://coinmate.io/api/ticker?currencyPair=BTC_EUR",
+  "kind": "time",
+  "verified": "singapore",
+  "tags": [
+   "cex"
+  ],
+  "website": "https://coinmate.io",
+  "aliases": {
+   "ccxt": "coinmate",
+   "listingapis": "coinmate"
+  }
+ },
+ "coinmetro": {
+  "label": "Coinmetro",
+  "rest": "https://api.coinmetro.com/exchange/prices",
+  "kind": "time",
+  "verified": "singapore",
+  "tags": [
+   "cex"
+  ],
+  "aliases": {
+   "listingapis": "coinmetro"
+  }
+ },
+ "coinone": {
+  "label": "CoinOne",
+  "rest": "https://api.coinone.co.kr/public/v2/ticker_new/KRW/BTC",
+  "kind": "time",
+  "verified": "singapore",
+  "tags": [
+   "cex"
+  ],
+  "website": "https://coinone.co.kr",
+  "aliases": {
+   "ccxt": "coinone",
+   "listingapis": "coinone"
+  }
+ },
+ "coinsph": {
+  "label": "Coins.ph",
+  "rest": "https://api.pro.coins.ph/openapi/v1/time",
+  "kind": "time",
+  "verified": "singapore",
+  "tags": [
+   "cex"
+  ],
+  "website": "https://coins.ph",
+  "aliases": {
+   "ccxt": "coinsph",
+   "listingapis": "coinsph"
+  }
+ },
+ "coinspot": {
+  "label": "CoinSpot",
+  "rest": "https://www.coinspot.com.au/pubapi/v2/latest",
+  "kind": "ticker",
+  "verified": "singapore",
+  "tags": [
+   "cex"
+  ],
+  "website": "https://www.coinspot.com.au",
+  "aliases": {
+   "ccxt": "coinspot",
+   "listingapis": "coinspot"
+  }
+ },
+ "coinstore": {
+  "label": "Coinstore",
+  "rest": "https://api.coinstore.com/api/v1/market/tickers",
+  "kind": "ticker",
+  "verified": "singapore",
+  "tags": [
+   "cex"
+  ],
+  "aliases": {
+   "listingapis": "coinstore"
+  }
+ },
+ "cointr": {
+  "label": "Cointr",
+  "rest": "https://api.cointr.com/api/v2/spot/public/time",
+  "kind": "time",
+  "blocked": {
+   "singapore": 400
+  },
+  "tags": [
+   "cex"
+  ],
+  "aliases": {
+   "listingapis": "cointr"
+  }
+ },
+ "coinupio": {
+  "label": "Coinup.Io",
+  "rest": "https://www.coinup.io/",
+  "kind": "host",
+  "tags": [
+   "cex"
+  ],
+  "website": "https://www.coinup.io",
+  "aliases": {
+   "listingapis": "coinupio"
+  }
+ },
+ "coinw": {
+  "label": "Coinw",
+  "rest": "https://api.coinw.com/api/v1/public?command=returnTicker",
+  "kind": "ticker",
+  "verified": "singapore",
+  "tags": [
+   "cex"
+  ],
+  "aliases": {
+   "listingapis": "coinw"
+  }
+ },
+ "coinzoom": {
+  "label": "Coinzoom",
+  "rest": "https://www.coinzoom.com/",
+  "kind": "host",
+  "tags": [
+   "cex"
+  ],
+  "website": "https://www.coinzoom.com/",
+  "aliases": {
+   "listingapis": "coinzoom"
+  }
+ },
+ "cryptal": {
+  "label": "Cryptal",
+  "rest": "https://cryptal.com/",
+  "kind": "host",
+  "tags": [
+   "cex"
+  ],
+  "website": "https://cryptal.com/en",
+  "aliases": {
+   "listingapis": "cryptal"
+  }
+ },
+ "cryptocom": {
+  "label": "Crypto.com",
+  "rest": "https://api.crypto.com/exchange/v1/public/get-tickers?instrument_name=BTC_USDT",
+  "kind": "time",
+  "verified": "singapore",
+  "tags": [
+   "cex"
+  ],
+  "website": "https://crypto.com/",
+  "aliases": {
+   "ccxt": "cryptocom",
+   "listingapis": "cryptocom"
+  }
+ },
+ "cryptomus": {
+  "label": "Cryptomus",
+  "rest": "https://api.cryptomus.com/v2/user-api/exchange/markets",
+  "kind": "ticker",
+  "verified": "singapore",
+  "tags": [
+   "cex"
+  ],
+  "website": "https://cryptomus.com",
+  "aliases": {
+   "ccxt": "cryptomus",
+   "listingapis": "cryptomus"
+  }
+ },
+ "cube": {
+  "label": "Cube",
+  "rest": "https://www.cube.exchange/",
+  "kind": "host",
+  "tags": [
+   "cex"
+  ],
+  "website": "https://www.cube.exchange/",
+  "aliases": {
+   "listingapis": "cube"
+  }
+ },
+ "deepcoin": {
+  "label": "DeepCoin",
+  "rest": "https://api.deepcoin.com/deepcoin/market/time",
+  "kind": "time",
+  "verified": "singapore",
+  "tags": [
+   "cex"
+  ],
+  "website": "https://www.deepcoin.com/",
+  "aliases": {
+   "ccxt": "deepcoin",
+   "listingapis": "deepcoin"
+  }
+ },
+ "delta": {
+  "label": "Delta Exchange",
+  "rest": "https://api.delta.exchange/v2/settings",
+  "kind": "time",
+  "verified": "singapore",
+  "tags": [
+   "cex"
+  ],
+  "website": "https://www.delta.exchange",
+  "aliases": {
+   "ccxt": "delta",
+   "listingapis": "delta"
+  }
+ },
+ "deribit": {
+  "label": "Deribit",
+  "rest": "https://www.deribit.com/api/v2/public/get_time",
+  "kind": "time",
+  "verified": "singapore",
+  "tags": [
+   "cex"
+  ],
+  "website": "https://www.deribit.com",
+  "aliases": {
+   "ccxt": "deribit",
+   "listingapis": "deribit"
+  }
+ },
+ "derive": {
+  "label": "Derive",
+  "rest": "https://api.lyra.finance/public/get_time",
+  "kind": "time",
+  "blocked": {
+   "singapore": 503
+  },
+  "method": "POST",
+  "body": "{}",
+  "tags": [
+   "perp-dex"
+  ],
+  "website": "https://www.derive.xyz",
+  "aliases": {
+   "ccxt": "derive",
+   "listingapis": "derive"
+  }
+ },
+ "dextrade": {
+  "label": "Dex-Trade",
+  "rest": "https://api.dex-trade.com/v1/public/symbols",
+  "kind": "ticker",
+  "verified": "singapore",
+  "tags": [
+   "cex"
+  ],
+  "aliases": {
+   "listingapis": "dextrade"
+  }
+ },
+ "difx": {
+  "label": "Difx",
+  "rest": "https://difx.com/",
+  "kind": "host",
+  "tags": [
+   "cex"
+  ],
+  "website": "https://difx.com/en",
+  "aliases": {
+   "listingapis": "difx"
+  }
+ },
+ "digifinex": {
+  "label": "DigiFinex",
+  "rest": "https://openapi.digifinex.com/v3/time",
+  "kind": "time",
+  "verified": "singapore",
+  "tags": [
+   "cex"
+  ],
+  "website": "https://www.digifinex.com",
+  "aliases": {
+   "ccxt": "digifinex",
+   "listingapis": "digifinex"
+  }
+ },
+ "digitalexchangeid": {
+  "label": "Digitalexchange.Id",
+  "rest": "https://digitalexchange.id/",
+  "kind": "host",
+  "tags": [
+   "cex"
+  ],
+  "website": "https://digitalexchange.id/",
+  "aliases": {
+   "listingapis": "digitalexchangeid"
+  }
+ },
+ "dydx": {
+  "label": "dYdX",
+  "rest": "https://indexer.dydx.trade/v4/time",
+  "kind": "time",
+  "verified": "singapore",
+  "tags": [
+   "perp-dex"
+  ],
+  "website": "https://www.dydx.xyz",
+  "aliases": {
+   "ccxt": "dydx",
+   "listingapis": "dydx"
+  }
+ },
+ "earnbit": {
+  "label": "Earnbit",
+  "rest": "https://api.earnbit.com/api/v1/time",
+  "kind": "time",
+  "verified": "singapore",
+  "discovered": true,
+  "tags": [
+   "cex"
+  ],
+  "website": "https://earnbit.com/",
+  "aliases": {
+   "listingapis": "earnbit"
+  }
+ },
+ "exmo": {
+  "label": "EXMO",
+  "rest": "https://api.exmo.com/v1.1/currency",
+  "kind": "ticker",
+  "verified": "singapore",
+  "tags": [
+   "cex"
+  ],
+  "website": "https://exmo.me",
+  "aliases": {
+   "ccxt": "exmo",
+   "listingapis": "exmo"
+  }
+ },
+ "extended": {
+  "label": "Extended",
+  "rest": "https://api.starknet.extended.exchange/api/v1/info/markets?market=BTC-USD",
+  "kind": "ticker",
+  "verified": "singapore",
+  "tags": [
+   "perp-dex"
+  ],
+  "website": "https://app.extended.exchange",
+  "aliases": {
+   "ccxt": "extended"
+  }
+ },
+ "fameex": {
+  "label": "Fameex",
+  "rest": "https://api.fameex.com/api/v2/public/time",
+  "kind": "time",
+  "blocked": {
+   "singapore": 403
+  },
+  "tags": [
+   "cex"
+  ],
+  "aliases": {
+   "listingapis": "fameex"
+  }
+ },
+ "figuremarkets": {
+  "label": "Figure Markets",
+  "rest": "https://www.figuremarkets.com/",
+  "kind": "host",
+  "tags": [
+   "cex"
+  ],
+  "website": "https://www.figuremarkets.com/",
+  "aliases": {
+   "listingapis": "figuremarkets"
+  }
+ },
+ "fmfw": {
+  "label": "FMFW.io",
+  "rest": "https://api.fmfw.io/api/3/public/ticker/BTCUSDT",
+  "kind": "time",
+  "verified": "singapore",
+  "tags": [
+   "cex"
+  ],
+  "website": "https://fmfw.io",
+  "aliases": {
+   "ccxt": "fmfwio",
+   "listingapis": "fmfw"
+  }
+ },
+ "foxbit": {
+  "label": "Foxbit",
+  "rest": "https://api.foxbit.com.br/rest/v3/system/time",
+  "kind": "time",
+  "verified": "singapore",
+  "tags": [
+   "cex"
+  ],
+  "website": "https://app.foxbit.com.br",
+  "aliases": {
+   "ccxt": "foxbit",
+   "listingapis": "foxbit"
+  }
+ },
+ "gateeu": {
+  "label": "Gate EU",
+  "rest": "https://api.gateeu.com/api/v4/spot/time",
+  "kind": "time",
+  "blocked": {
+   "singapore": 400
+  },
+  "tags": [
+   "cex"
+  ],
+  "website": "https://gate.com",
+  "aliases": {
+   "ccxt": "gateeu"
+  }
+ },
+ "gateio": {
+  "label": "Gate",
+  "rest": "https://api.gateio.ws/api/v4/spot/time",
+  "kind": "time",
+  "verified": "singapore",
+  "tags": [
+   "cex"
+  ],
+  "website": "https://gate.com",
+  "aliases": {
+   "ccxt": "gate",
+   "listingapis": "gate"
+  }
+ },
+ "gateus": {
+  "label": "Gate Us",
+  "rest": "https://www.gate.com/",
+  "kind": "host",
+  "tags": [
+   "cex"
+  ],
+  "website": "https://www.gate.com/en-us",
+  "aliases": {
+   "listingapis": "gateus"
+  }
+ },
+ "gemini": {
+  "label": "Gemini",
+  "rest": "https://api.gemini.com/v1/pubticker/btcusd",
+  "kind": "time",
+  "verified": "singapore",
+  "tags": [
+   "cex"
+  ],
+  "website": "https://gemini.com/",
+  "aliases": {
+   "ccxt": "gemini",
+   "listingapis": "gemini"
+  }
+ },
+ "gmocoinjapan": {
+  "label": "Gmo Coin Japan",
+  "rest": "https://api.coin.z.com/public/v1/status",
+  "kind": "time",
+  "verified": "singapore",
+  "tags": [
+   "cex"
+  ],
+  "website": "https://coin.z.com/jp/",
+  "aliases": {
+   "listingapis": "gmocoinjapan"
+  }
+ },
+ "gopax": {
+  "label": "Gopax",
+  "rest": "https://api.gopax.co.kr/time",
+  "kind": "time",
+  "verified": "singapore",
+  "tags": [
+   "cex"
+  ],
+  "website": "https://www.gopax.co.kr/exchange/",
+  "aliases": {
+   "listingapis": "gopax"
+  }
+ },
+ "grovex": {
+  "label": "Grovex",
+  "rest": "https://grovex.io/",
+  "kind": "host",
+  "tags": [
+   "cex"
+  ],
+  "website": "https://GroveX.io",
+  "aliases": {
+   "listingapis": "grovex"
+  }
+ },
+ "grvt": {
+  "label": "GRVT",
+  "rest": "https://market-data.grvt.io/full/v1/all_instruments",
+  "kind": "time",
+  "method": "POST",
+  "body": "{}",
+  "verified": "singapore",
+  "tags": [
+   "perp-dex"
+  ],
+  "website": "https://grvt.io",
+  "aliases": {
+   "ccxt": "grvt",
+   "listingapis": "grvt"
+  }
+ },
+ "hashkey": {
+  "label": "HashKey Global",
+  "rest": "https://api-glb.hashkey.com/api/v1/time",
+  "kind": "time",
+  "verified": "singapore",
+  "tags": [
+   "cex"
+  ],
+  "website": "https://global.hashkey.com/",
+  "aliases": {
+   "ccxt": "hashkey",
+   "listingapis": "hashkey"
+  }
+ },
+ "hata": {
+  "label": "Hata",
+  "rest": "https://hata.io/",
+  "kind": "host",
+  "tags": [
+   "cex"
+  ],
+  "website": "https://hata.io/home",
+  "aliases": {
+   "listingapis": "hata"
+  }
+ },
+ "hibachi": {
+  "label": "Hibachi",
+  "rest": "https://data-api.hibachi.xyz/exchange/utc-timestamp",
+  "kind": "time",
+  "verified": "singapore",
+  "tags": [
+   "perp-dex"
+  ],
+  "website": "https://hibachi.xyz",
+  "aliases": {
+   "ccxt": "hibachi",
+   "listingapis": "hibachi"
+  }
+ },
+ "hibt": {
+  "label": "Hibt",
+  "rest": "https://hibt.com/",
+  "kind": "host",
+  "tags": [
+   "cex"
+  ],
+  "website": "https://hibt.com/",
+  "aliases": {
+   "listingapis": "hibt"
+  }
+ },
+ "hitbtc": {
+  "label": "HitBTC",
+  "rest": "https://api.hitbtc.com/api/3/public/ticker/BTCUSDT",
+  "kind": "time",
+  "verified": "singapore",
+  "tags": [
+   "cex"
+  ],
+  "website": "https://hitbtc.com",
+  "aliases": {
+   "ccxt": "hitbtc",
+   "listingapis": "hitbtc"
+  }
+ },
+ "hollaex": {
+  "label": "HollaEx",
+  "rest": "https://api.hollaex.com/v2/health",
+  "kind": "ticker",
+  "verified": "singapore",
+  "tags": [
+   "cex"
+  ],
+  "website": "https://pro.hollaex.com",
+  "aliases": {
+   "ccxt": "hollaex",
+   "listingapis": "hollaex"
+  }
+ },
+ "hotcoin": {
+  "label": "Hotcoin",
+  "rest": "https://api.hotcoinfin.com/v1/common/timestamp",
+  "kind": "time",
+  "verified": "singapore",
+  "tags": [
+   "cex"
+  ],
+  "aliases": {
+   "listingapis": "hotcoin"
+  }
+ },
+ "htx": {
+  "label": "HTX",
+  "rest": "https://api.huobi.pro/v1/common/timestamp",
+  "kind": "time",
+  "verified": "singapore",
+  "tags": [
+   "cex"
+  ],
+  "website": "https://www.huobi.com",
+  "aliases": {
+   "ccxt": "htx",
+   "listingapis": "htx"
+  }
+ },
+ "hyperliquid": {
+  "label": "Hyperliquid",
+  "rest": "https://api.hyperliquid.xyz/info",
+  "kind": "time",
+  "method": "POST",
+  "body": "{\"type\":\"exchangeStatus\"}",
+  "verified": "singapore",
+  "tags": [
+   "perp-dex"
+  ],
+  "website": "https://hyperliquid.xyz",
+  "aliases": {
+   "ccxt": "hyperliquid",
+   "listingapis": "hyperliquid"
+  }
+ },
+ "independentreserve": {
+  "label": "Independent Reserve",
+  "rest": "https://api.independentreserve.com/Public/GetMarketSummary?primaryCurrencyCode=xbt&secondaryCurrencyCode=aud",
+  "kind": "time",
+  "verified": "singapore",
+  "tags": [
+   "cex"
+  ],
+  "website": "https://www.independentreserve.com",
+  "aliases": {
+   "ccxt": "independentreserve",
+   "listingapis": "independentreserve"
+  }
+ },
+ "indodax": {
+  "label": "INDODAX",
+  "rest": "https://indodax.com/api/server_time",
+  "kind": "time",
+  "verified": "singapore",
+  "tags": [
+   "cex"
+  ],
+  "website": "https://www.indodax.com",
+  "aliases": {
+   "ccxt": "indodax",
+   "listingapis": "indodax"
+  }
+ },
+ "inex": {
+  "label": "Inex",
+  "rest": "https://www.inexcoin.com/",
+  "kind": "host",
+  "tags": [
+   "cex"
+  ],
+  "website": "https://www.inexcoin.com/",
+  "aliases": {
+   "listingapis": "inex"
+  }
+ },
+ "inxone": {
+  "label": "Inx One",
+  "rest": "https://www.inx.co/",
+  "kind": "host",
+  "tags": [
+   "cex"
+  ],
+  "website": "https://www.inx.co/",
+  "aliases": {
+   "listingapis": "inxone"
+  }
+ },
+ "itbit": {
+  "label": "Itbit",
+  "rest": "https://api.paxos.com/v2/markets",
+  "kind": "time",
+  "verified": "singapore",
+  "tags": [
+   "cex"
+  ],
+  "website": "https://www.itbit.com/",
+  "aliases": {
+   "listingapis": "itbit"
+  }
+ },
+ "kanga": {
+  "label": "Kanga",
+  "rest": "https://kanga.exchange/",
+  "kind": "host",
+  "tags": [
+   "cex"
+  ],
+  "website": "https://kanga.exchange/",
+  "aliases": {
+   "listingapis": "kanga"
+  }
+ },
+ "kcex": {
+  "label": "Kcex",
+  "rest": "https://api.kcex.com/api/v3/time",
+  "kind": "time",
+  "blocked": {
+   "singapore": 403
+  },
+  "tags": [
+   "cex"
+  ],
+  "aliases": {
+   "listingapis": "kcex"
+  }
+ },
+ "kinesismoney": {
+  "label": "Kinesis Money",
+  "rest": "https://kinesis.money/",
+  "kind": "host",
+  "tags": [
+   "cex"
+  ],
+  "website": "https://kinesis.money/",
+  "aliases": {
+   "listingapis": "kinesismoney"
+  }
+ },
+ "koinbx": {
+  "label": "Koinbx",
+  "rest": "https://koinbx.com/",
+  "kind": "host",
+  "tags": [
+   "cex"
+  ],
+  "website": "https://koinbx.com/coin-list",
+  "aliases": {
+   "listingapis": "koinbx"
+  }
+ },
+ "koinpark": {
+  "label": "Koinpark",
+  "rest": "https://www.koinpark.com/",
+  "kind": "host",
+  "tags": [
+   "cex"
+  ],
+  "website": "https://www.koinpark.com/",
+  "aliases": {
+   "listingapis": "koinpark"
+  }
+ },
+ "korbit": {
+  "label": "Korbit",
+  "rest": "https://api.korbit.co.kr/v2/time",
+  "kind": "time",
+  "verified": "singapore",
+  "tags": [
+   "cex"
+  ],
+  "aliases": {
+   "listingapis": "korbit"
+  }
+ },
+ "kraken": {
+  "label": "Kraken",
+  "rest": "https://api.kraken.com/0/public/Time",
+  "kind": "time",
+  "verified": "singapore",
+  "tags": [
+   "cex"
+  ],
+  "website": "https://www.kraken.com",
+  "aliases": {
+   "ccxt": "kraken",
+   "listingapis": "kraken"
+  }
+ },
+ "krakenfutures": {
+  "label": "Kraken Futures",
+  "rest": "https://futures.kraken.com/derivatives/api/v3/tickers/PF_XBTUSD",
+  "kind": "ticker",
+  "verified": "singapore",
+  "tags": [
+   "cex"
+  ],
+  "website": "https://futures.kraken.com/",
+  "aliases": {
+   "ccxt": "krakenfutures"
+  }
+ },
+ "kucoin": {
+  "label": "KuCoin",
+  "rest": "https://api.kucoin.com/api/v1/timestamp",
+  "kind": "time",
+  "verified": "singapore",
+  "tags": [
+   "cex"
+  ],
+  "website": "https://www.kucoin.com",
+  "aliases": {
+   "ccxt": "kucoin",
+   "listingapis": "kucoin"
+  }
+ },
+ "kucoineu": {
+  "label": "KuCoin EU",
+  "rest": "https://api.kucoin.eu/api/v1/timestamp",
+  "kind": "time",
+  "verified": "singapore",
+  "tags": [
+   "cex"
+  ],
+  "website": "https://www.kucoin.com/en-eu",
+  "aliases": {
+   "ccxt": "kucoineu"
+  }
+ },
+ "kucoinfutures": {
+  "label": "KuCoin Futures",
+  "rest": "https://api-futures.kucoin.com/api/v1/timestamp",
+  "kind": "time",
+  "verified": "singapore",
+  "tags": [
+   "cex"
+  ],
+  "website": "https://futures.kucoin.com/",
+  "aliases": {
+   "ccxt": "kucoinfutures"
+  }
+ },
+ "latoken": {
+  "label": "Latoken",
+  "rest": "https://api.latoken.com/v2/time",
+  "kind": "time",
+  "verified": "singapore",
+  "tags": [
+   "cex"
+  ],
+  "website": "https://latoken.com",
+  "aliases": {
+   "ccxt": "latoken",
+   "listingapis": "latoken"
+  }
+ },
+ "lbank": {
+  "label": "LBank",
+  "rest": "https://api.lbank.info/v2/timestamp.do",
+  "kind": "time",
+  "verified": "singapore",
+  "tags": [
+   "cex"
+  ],
+  "website": "https://www.lbank.com",
+  "aliases": {
+   "ccxt": "lbank",
+   "listingapis": "lbank"
+  }
+ },
+ "lcx": {
+  "label": "Lcx",
+  "rest": "https://exchange-api.lcx.com/api/pairs",
+  "kind": "time",
+  "verified": "singapore",
+  "tags": [
+   "cex"
+  ],
+  "aliases": {
+   "listingapis": "lcx"
+  }
+ },
+ "levex": {
+  "label": "Levex",
+  "rest": "https://levex.com/",
+  "kind": "host",
+  "tags": [
+   "cex"
+  ],
+  "website": "https://levex.com/en",
+  "aliases": {
+   "listingapis": "levex"
+  }
+ },
+ "lighter": {
+  "label": "Lighter",
+  "rest": "https://mainnet.zklighter.elliot.ai",
+  "kind": "time",
+  "verified": "singapore",
+  "tags": [
+   "perp-dex"
+  ],
+  "website": "https://app.lighter.xyz",
+  "aliases": {
+   "ccxt": "lighter",
+   "listingapis": "lighter"
+  }
+ },
+ "luno": {
+  "label": "Luno",
+  "rest": "https://api.luno.com/api/1/ticker?pair=XBTZAR",
+  "kind": "time",
+  "verified": "singapore",
+  "tags": [
+   "cex"
+  ],
+  "website": "https://www.luno.com",
+  "aliases": {
+   "ccxt": "luno",
+   "listingapis": "luno"
+  }
+ },
+ "maxmaicoin": {
+  "label": "Max Maicoin",
+  "rest": "https://max-api.maicoin.com/api/v2/timestamp",
+  "kind": "time",
+  "verified": "singapore",
+  "tags": [
+   "cex"
+  ],
+  "website": "https://max.maicoin.com",
+  "aliases": {
+   "listingapis": "maxmaicoin"
+  }
+ },
+ "mercadobitcoin": {
+  "label": "Mercado Bitcoin",
+  "rest": "https://api.mercadobitcoin.net/api/v4/tickers?symbols=BTC-BRL",
+  "kind": "ticker",
+  "blocked": {
+   "singapore": 403
+  },
+  "tags": [
+   "cex"
+  ],
+  "website": "https://www.mercadobitcoin.com.br",
+  "aliases": {
+   "ccxt": "mercado",
+   "listingapis": "mercadobitcoin"
+  }
+ },
+ "mexc": {
+  "label": "MEXC Global",
+  "rest": "https://api.mexc.com/api/v3/time",
+  "kind": "time",
+  "verified": "singapore",
+  "tags": [
+   "cex"
+  ],
+  "website": "https://www.mexc.com/",
+  "aliases": {
+   "ccxt": "mexc",
+   "listingapis": "mexc"
+  }
+ },
+ "modetrade": {
+  "label": "Mode Trade",
+  "rest": "https://api-evm.orderly.org/v1/public/system_info",
+  "kind": "time",
+  "verified": "singapore",
+  "tags": [
+   "perp-dex"
+  ],
+  "website": "https://trade.mode.network",
+  "aliases": {
+   "ccxt": "modetrade",
+   "listingapis": "modetrade"
+  }
+ },
+ "mudrex": {
+  "label": "Mudrex",
+  "rest": "https://mudrex.com/",
+  "kind": "host",
+  "tags": [
+   "cex"
+  ],
+  "website": "https://mudrex.com/",
+  "aliases": {
+   "ccxt": "mudrex",
+   "listingapis": "mudrex"
+  }
+ },
+ "myokx": {
+  "label": "MyOKX(EEA)",
+  "rest": "https://eea.okx.com/api/v5/public/time",
+  "kind": "time",
+  "verified": "singapore",
+  "tags": [
+   "cex"
+  ],
+  "website": "https://my.okx.com",
+  "aliases": {
+   "ccxt": "myokx"
+  }
+ },
+ "namiexchange": {
+  "label": "Nami Exchange",
+  "rest": "https://nami.exchange/",
+  "kind": "host",
+  "tags": [
+   "cex"
+  ],
+  "website": "https://nami.exchange/",
+  "aliases": {
+   "listingapis": "namiexchange"
+  }
+ },
+ "nbx": {
+  "label": "Nbx",
+  "rest": "https://nbx.com/",
+  "kind": "host",
+  "tags": [
+   "cex"
+  ],
+  "website": "https://nbx.com/",
+  "aliases": {
+   "listingapis": "nbx"
+  }
+ },
+ "ndax": {
+  "label": "NDAX",
+  "rest": "https://api.ndax.io:8443/AP/Ping",
+  "kind": "ticker",
+  "verified": "singapore",
+  "tags": [
+   "cex"
+  ],
+  "website": "https://ndax.io",
+  "aliases": {
+   "ccxt": "ndax",
+   "listingapis": "ndax"
+  }
+ },
+ "nizaio": {
+  "label": "Niza.Io",
+  "rest": "https://niza.io/",
+  "kind": "host",
+  "tags": [
+   "cex"
+  ],
+  "website": "https://niza.io",
+  "aliases": {
+   "listingapis": "nizaio"
+  }
+ },
+ "nonkyc": {
+  "label": "Nonkyc",
+  "rest": "https://api.nonkyc.io/api/v2/time",
+  "kind": "time",
+  "verified": "singapore",
+  "discovered": true,
+  "tags": [
+   "cex"
+  ],
+  "aliases": {
+   "listingapis": "nonkyc"
+  }
+ },
+ "okj": {
+  "label": "Okj",
+  "rest": "https://www.okcoin.jp/api/spot/v3/instruments/BTC-JPY/ticker",
+  "kind": "ticker",
+  "blocked": {
+   "singapore": 503
+  },
+  "tags": [
+   "cex"
+  ],
+  "website": "https://www.okcoin.jp/",
+  "aliases": {
+   "listingapis": "okj"
+  }
+ },
+ "okx": {
+  "label": "OKX",
+  "rest": "https://www.okx.com/api/v5/public/time",
+  "kind": "time",
+  "verified": "singapore",
+  "tags": [
+   "cex"
+  ],
+  "website": "https://www.okx.com",
+  "aliases": {
+   "ccxt": "okx",
+   "listingapis": "okx"
+  }
+ },
+ "okxus": {
+  "label": "OKX(US)",
+  "rest": "https://us.okx.com/api/v5/public/time",
+  "kind": "time",
+  "verified": "singapore",
+  "tags": [
+   "cex"
+  ],
+  "website": "https://app.okx.com",
+  "aliases": {
+   "ccxt": "okxus"
+  }
+ },
+ "ondoglobalmarkets": {
+  "label": "Ondo Global Markets",
+  "rest": "https://ondo.finance/",
+  "kind": "host",
+  "tags": [
+   "cex"
+  ],
+  "website": "https://ondo.finance/global-markets",
+  "aliases": {
+   "listingapis": "ondoglobalmarkets"
+  }
+ },
+ "orangex": {
+  "label": "Orangex",
+  "rest": "https://api.orangex.com/api/v1/public/time",
+  "kind": "time",
+  "verified": "singapore",
+  "tags": [
+   "cex"
+  ],
+  "aliases": {
+   "listingapis": "orangex"
+  }
+ },
+ "orbix": {
+  "label": "Orbix",
+  "rest": "https://www.orbixtrade.com/api/v3/time",
+  "kind": "time",
+  "verified": "singapore",
+  "discovered": true,
+  "tags": [
+   "cex"
+  ],
+  "website": "https://www.orbixtrade.com/en",
+  "aliases": {
+   "listingapis": "orbix"
+  }
+ },
+ "ourbit": {
+  "label": "Ourbit",
+  "rest": "https://api.ourbit.com/api/v3/time",
+  "kind": "time",
+  "verified": "singapore",
+  "tags": [
+   "cex"
+  ],
+  "aliases": {
+   "listingapis": "ourbit"
+  }
+ },
+ "oxfun": {
+  "label": "Oxfun",
+  "rest": "https://api.ox.fun/v3/markets",
+  "kind": "ticker",
+  "blocked": {
+   "singapore": 530
+  },
+  "tags": [
+   "cex"
+  ],
+  "website": "https://ox.fun",
+  "aliases": {
+   "listingapis": "oxfun"
+  }
+ },
+ "p2b": {
+  "label": "p2b",
+  "rest": "https://api.p2pb2b.com/api/v2/public/ticker?market=BTC_USDT",
+  "kind": "time",
+  "verified": "singapore",
+  "tags": [
+   "cex"
+  ],
+  "website": "https://p2pb2b.com/",
+  "aliases": {
+   "ccxt": "p2b",
+   "listingapis": "p2b"
+  }
+ },
+ "pacifica": {
+  "label": "Pacifica",
+  "rest": "https://api.pacifica.fi/api/v1/info",
+  "kind": "time",
+  "verified": "singapore",
+  "tags": [
+   "perp-dex"
+  ],
+  "website": "https://app.pacifica.fi",
+  "aliases": {
+   "ccxt": "pacifica",
+   "listingapis": "pacifica"
+  }
+ },
+ "paradex": {
+  "label": "Paradex",
+  "rest": "https://api.prod.paradex.trade/v1/system/time",
+  "kind": "time",
+  "verified": "singapore",
+  "tags": [
+   "perp-dex"
+  ],
+  "website": "https://www.paradex.trade/",
+  "aliases": {
+   "ccxt": "paradex",
+   "listingapis": "paradex"
+  }
+ },
+ "paribu": {
+  "label": "Paribu",
+  "rest": "https://www.paribu.com/ticker",
+  "kind": "ticker",
+  "verified": "singapore",
+  "tags": [
+   "cex"
+  ],
+  "aliases": {
+   "listingapis": "paribu"
+  }
+ },
+ "paymium": {
+  "label": "Paymium",
+  "rest": "https://paymium.com/api/v1/data/eur/ticker",
+  "kind": "time",
+  "verified": "singapore",
+  "tags": [
+   "cex"
+  ],
+  "website": "https://www.paymium.com",
+  "aliases": {
+   "ccxt": "paymium",
+   "listingapis": "paymium"
+  }
+ },
+ "phemex": {
+  "label": "Phemex",
+  "rest": "https://api.phemex.com/public/time",
+  "kind": "time",
+  "verified": "singapore",
+  "tags": [
+   "cex"
+  ],
+  "website": "https://phemex.com",
+  "aliases": {
+   "ccxt": "phemex",
+   "listingapis": "phemex"
+  }
+ },
+ "pionex": {
+  "label": "Pionex",
+  "rest": "https://api.pionex.com/api/v1/common/symbols",
+  "kind": "time",
+  "verified": "singapore",
+  "tags": [
+   "cex"
+  ],
+  "aliases": {
+   "listingapis": "pionex"
+  }
+ },
+ "pointpay": {
+  "label": "Pointpay",
+  "rest": "https://api.pointpay.io/api/v1/time",
+  "kind": "time",
+  "verified": "singapore",
+  "discovered": true,
+  "tags": [
+   "cex"
+  ],
+  "website": "https://exchange.pointpay.io/",
+  "aliases": {
+   "listingapis": "pointpay"
+  }
+ },
+ "poloniex": {
+  "label": "Poloniex",
+  "rest": "https://api.poloniex.com/timestamp",
+  "kind": "time",
+  "verified": "singapore",
+  "tags": [
+   "cex"
+  ],
+  "website": "https://www.poloniex.com",
+  "aliases": {
+   "ccxt": "poloniex",
+   "listingapis": "poloniex"
+  }
+ },
+ "probit": {
+  "label": "ProBit",
+  "rest": "https://api.probit.com/api/exchange/v1/time",
+  "kind": "time",
+  "blocked": {
+   "singapore": 403
+  },
+  "tags": [
+   "cex"
+  ]
+ },
+ "quidax": {
+  "label": "Quidax",
+  "rest": "https://www.quidax.com/api/v1/markets",
+  "kind": "ticker",
+  "blocked": {
+   "singapore": 503
+  },
+  "tags": [
+   "cex"
+  ],
+  "aliases": {
+   "listingapis": "quidax"
+  }
+ },
+ "safebit": {
+  "label": "Safebit",
+  "rest": "https://www.safebit.com.tr/",
+  "kind": "host",
+  "tags": [
+   "cex"
+  ],
+  "website": "https://www.safebit.com.tr",
+  "aliases": {
+   "listingapis": "safebit"
+  }
+ },
+ "safetrade": {
+  "label": "Safetrade",
+  "rest": "https://safetrade.com/",
+  "kind": "host",
+  "tags": [
+   "cex"
+  ],
+  "website": "https://safetrade.com",
+  "aliases": {
+   "listingapis": "safetrade"
+  }
+ },
+ "secondbtc": {
+  "label": "Secondbtc",
+  "rest": "https://secondbtc.com/",
+  "kind": "host",
+  "tags": [
+   "cex"
+  ],
+  "website": "https://secondbtc.com",
+  "aliases": {
+   "listingapis": "secondbtc"
+  }
+ },
+ "superex": {
+  "label": "Superex",
+  "rest": "https://api.superex.com/api/v1/time",
+  "kind": "ticker",
+  "verified": "singapore",
+  "tags": [
+   "cex"
+  ],
+  "aliases": {
+   "listingapis": "superex"
+  }
+ },
+ "tapbit": {
+  "label": "Tapbit",
+  "rest": "https://openapi.tapbit.com/spot/api/v1/time",
+  "kind": "time",
+  "blocked": {
+   "singapore": 403
+  },
+  "tags": [
+   "cex"
+  ],
+  "aliases": {
+   "listingapis": "tapbit"
+  }
+ },
+ "tokocrypto": {
+  "label": "Tokocrypto",
+  "rest": "https://www.tokocrypto.com/open/v1/common/time",
+  "kind": "time",
+  "verified": "singapore",
+  "tags": [
+   "cex"
+  ],
+  "website": "https://tokocrypto.com",
+  "aliases": {
+   "ccxt": "tokocrypto",
+   "listingapis": "tokocrypto"
+  }
+ },
+ "tokpie": {
+  "label": "Tokpie",
+  "rest": "https://tokpie.io/",
+  "kind": "host",
+  "tags": [
+   "cex"
+  ],
+  "website": "https://tokpie.io/",
+  "aliases": {
+   "listingapis": "tokpie"
+  }
+ },
+ "toobit": {
+  "label": "Toobit",
+  "rest": "https://api.toobit.com/api/v1/time",
+  "kind": "time",
+  "verified": "singapore",
+  "tags": [
+   "cex"
+  ],
+  "website": "https://www.toobit.com/",
+  "aliases": {
+   "ccxt": "toobit",
+   "listingapis": "toobit"
+  }
+ },
+ "tothemoon": {
+  "label": "Tothemoon",
+  "rest": "https://tothemoon.com/",
+  "kind": "host",
+  "tags": [
+   "cex"
+  ],
+  "website": "https://tothemoon.com/",
+  "aliases": {
+   "listingapis": "tothemoon"
+  }
+ },
+ "trubit": {
+  "label": "Trubit",
+  "rest": "https://www.trubit.com/",
+  "kind": "host",
+  "tags": [
+   "cex"
+  ],
+  "website": "https://www.trubit.com/",
+  "aliases": {
+   "listingapis": "trubit"
+  }
+ },
+ "upbit": {
+  "label": "Upbit",
+  "rest": "https://api.upbit.com/v1/ticker?markets=KRW-BTC",
+  "kind": "time",
+  "verified": "singapore",
+  "tags": [
+   "cex"
+  ],
+  "website": "https://upbit.com",
+  "aliases": {
+   "ccxt": "upbit",
+   "listingapis": "upbit"
+  }
+ },
+ "upbitindonesia": {
+  "label": "Upbit Indonesia ",
+  "rest": "https://id-api.upbit.com/v1/market/all",
+  "kind": "ticker",
+  "verified": "singapore",
+  "tags": [
+   "cex"
+  ],
+  "website": "https://id.upbit.com/home",
+  "aliases": {
+   "listingapis": "upbitindonesia"
+  }
+ },
+ "valr": {
+  "label": "Valr",
+  "rest": "https://api.valr.com/v1/public/time",
+  "kind": "time",
+  "verified": "singapore",
+  "tags": [
+   "cex"
+  ],
+  "aliases": {
+   "listingapis": "valr"
+  }
+ },
+ "vindax": {
+  "label": "Vindax",
+  "rest": "https://api.vindax.com/api/v1/time",
+  "kind": "time",
+  "verified": "singapore",
+  "discovered": true,
+  "tags": [
+   "cex"
+  ],
+  "website": "https://vindax.com/",
+  "aliases": {
+   "listingapis": "vindax"
+  }
+ },
+ "wazirx": {
+  "label": "Wazirx",
+  "rest": "https://api.wazirx.com/sapi/v1/time",
+  "kind": "time",
+  "verified": "singapore",
+  "tags": [
+   "cex"
+  ],
+  "aliases": {
+   "listingapis": "wazirx"
+  }
+ },
+ "websea": {
+  "label": "Websea",
+  "rest": "https://oapi.websea.com/openApi/market/time",
+  "kind": "ticker",
+  "verified": "singapore",
+  "tags": [
+   "cex"
+  ],
+  "website": "https://www.websea.com/en",
+  "aliases": {
+   "listingapis": "websea"
+  }
+ },
+ "weex": {
+  "label": "Weex",
+  "rest": "https://api-spot.weex.com/api/v3/time",
+  "kind": "time",
+  "verified": "singapore",
+  "tags": [
+   "cex"
+  ],
+  "website": "https://www.weex.com",
+  "aliases": {
+   "ccxt": "weex",
+   "listingapis": "weex"
+  }
+ },
+ "whitebit": {
+  "label": "WhiteBit",
+  "rest": "https://whitebit.com/api/v4/public/time",
+  "kind": "time",
+  "verified": "singapore",
+  "tags": [
+   "cex"
+  ],
+  "website": "https://www.whitebit.com",
+  "aliases": {
+   "ccxt": "whitebit",
+   "listingapis": "whitebit"
+  }
+ },
+ "woo": {
+  "label": "WOO X",
+  "rest": "https://api.woox.io/v3/public/systemInfo",
+  "kind": "time",
+  "verified": "singapore",
+  "tags": [
+   "cex"
+  ],
+  "website": "https://woox.io/",
+  "aliases": {
+   "ccxt": "woo",
+   "listingapis": "woo"
+  }
+ },
+ "woofipro": {
+  "label": "WOOFI PRO",
+  "rest": "https://api-evm.orderly.org/v1/public/system_info",
+  "kind": "time",
+  "verified": "singapore",
+  "tags": [
+   "cex"
+  ],
+  "website": "https://dex.woo.org",
+  "aliases": {
+   "ccxt": "woofipro"
+  }
+ },
+ "xbocom": {
+  "label": "Xbo.Com",
+  "rest": "https://api.xbo.com/trading-pairs",
+  "kind": "ticker",
+  "verified": "singapore",
+  "tags": [
+   "cex"
+  ],
+  "website": "https://www.xbo.com/",
+  "aliases": {
+   "listingapis": "xbocom"
+  }
+ },
+ "xt": {
+  "label": "XT",
+  "rest": "https://sapi.xt.com/v4/public/time",
+  "kind": "time",
+  "verified": "singapore",
+  "tags": [
+   "cex"
+  ],
+  "website": "https://xt.com",
+  "aliases": {
+   "ccxt": "xt",
+   "listingapis": "xt"
+  }
+ },
+ "youngplatform": {
+  "label": "Young Platform",
+  "rest": "https://api.youngplatform.com/api/v4/public/time",
+  "kind": "time",
+  "verified": "singapore",
+  "discovered": true,
+  "tags": [
+   "cex"
+  ],
+  "website": "https://youngplatform.com/",
+  "aliases": {
+   "listingapis": "youngplatform"
+  }
+ },
+ "zaif": {
+  "label": "Zaif",
+  "rest": "https://api.zaif.jp/api/1/ticker/btc_jpy",
+  "kind": "ticker",
+  "verified": "singapore",
+  "tags": [
+   "cex"
+  ],
+  "website": "https://zaif.jp",
+  "aliases": {
+   "ccxt": "zaif",
+   "listingapis": "zaif"
+  }
+ },
+ "zebpay": {
+  "label": "Zebpay",
+  "rest": "https://sapi.zebpay.com/api/v2/system/time",
+  "kind": "time",
+  "blocked": {
+   "singapore": 403
+  },
+  "tags": [
+   "cex"
+  ],
+  "website": "https://www.zebpay.com",
+  "aliases": {
+   "ccxt": "zebpay",
+   "listingapis": "zebpay"
+  }
+ },
+ "zoomex": {
+  "label": "Zoomex",
+  "rest": "https://openapi.zoomex.com/cloud/trade/v3/market/time",
+  "kind": "time",
+  "verified": "singapore",
+  "tags": [
+   "cex"
+  ],
+  "aliases": {
+   "listingapis": "zoomex"
+  }
+ }
+}

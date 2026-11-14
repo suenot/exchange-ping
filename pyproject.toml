@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "exchange-ping"
+version = "0.1.0"
+description = "Latency from this box to ~200 crypto exchange APIs: DNS, TCP, TLS, warm request, server clock offset. Stdlib only."
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.8"
+keywords = ["crypto", "exchange", "latency", "rtt", "hft", "colocation"]
+
+[project.scripts]
+exchange-ping = "exchange_ping.cli:main"
+
+[tool.setuptools]
+packages = ["exchange_ping"]
+
+[tool.setuptools.package-data]
+exchange_ping = ["venues.json"]
