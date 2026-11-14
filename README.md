@@ -68,8 +68,8 @@ exchange-ping discover gopax.co.kr bitkub.com   # look for a server-time endpoin
 
 `exchange-ping globalping --cities Tokyo,Singapore,Seoul,Frankfurt` sends the same GET from public
 [Globalping](https://globalping.io) probes in each city (HTTPS request -> first byte). The anonymous
-quota is about 250 measurements an hour, so a full registry takes a few hours; the tool waits out
-HTTP 429 itself. POST endpoints (Hyperliquid, CEX.IO, GRVT, Derive) are skipped there.
+quota is 250 measurements an hour per IP; with a free account token in `GLOBALPING_TOKEN` it is 500.
+A full registry still takes a few hours; the tool waits out HTTP 429 itself. POST endpoints (Hyperliquid, CEX.IO, GRVT, Derive) are skipped there.
 
 ## Output
 

@@ -92,8 +92,11 @@ def cmd_discover(a):
 
 
 def gp_call(url, body=None):
-    req = urllib.request.Request(url, data=json.dumps(body).encode() if body else None,
-                                 headers={"Content-Type": "application/json", "User-Agent": UA})
+    headers = {"Content-Type": "application/json", "User-Agent": UA}
+    token = os.environ.get("GLOBALPING_TOKEN") or os.environ.get("GLOBALPING")
+    if token:  # a free Globalping account: 500 tests an hour instead of 250 per IP
+        headers["Authorization"] = f"Bearer {token}"
+    req = urllib.request.Request(url, data=json.dumps(body).encode() if body else None, headers=headers)
     with urllib.request.urlopen(req, timeout=30) as r:
         return json.load(r)
 
